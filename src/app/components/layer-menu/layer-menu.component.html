@@ -1,0 +1,12 @@
+<div class="layer-menu">
+    <button id="toggle-layers-btn" class="toolbar-btn">Layers</button>
+    <ul id="layers-menu" class="layers-menu">
+      <li *ngFor="let layer of layers">
+        <label>
+          <input type="checkbox" (change)="toggleLayer(layer)" />
+          {{ layer.name }}
+        </label>
+      </li>
+    </ul>
+  </div>
+  
